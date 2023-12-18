@@ -1,0 +1,283 @@
+<style>
+  body {
+    background-color:#ed9795;
+}
+.container {
+ display: grid;
+ align-items: center;
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+}
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+}
+#hp  {
+float: right;
+ margin: 0 0 0 15px;
+}
+#hp1  {
+float: left;
+ margin: 0 15px 0 0;
+}
+p {
+    display: table; /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto; /* keep the table centered */
+    padding:5px;font-size:20px;background-color:green;color:#ffffff;
+}
+
+h2 {
+    display: table; /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto; /* keep the table centered */
+    padding:5px;font-size:20px;background-color:green;color:#ffffff;
+}
+img {
+  max-width: 200%;
+  max-height:200%;
+  
+}
+
+.text {
+  font-size: 20px;
+  margin-left: 50px;
+  text-align:right;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #0e2431;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+</style>
+
+ <body>
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+          <div class="logo">
+            <h1 style="margin-top:10px; font-family:impact;"><u>SOCIAL MEDIA IN EMPOWERING WOMEN</u></h1>
+          </div>
+          <div class="menu-items">
+            <li><a href="WomenEmpowerment.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="members.html">MEMBERS</a></li>
+          </div>
+        </div>
+      </div>
+    </nav>
+<img style="width:100%; margin-top:0px;" src="Pictures/women12.jpg">
+
+<div style="text-align:center; margin-top: 30px;"><img style="width:20%;" src="Pictures/logo.png"></div>
+
+<div class="containers">
+  <h1 style="font-size:50px; text-align:center; margin-top:50px; margin-bottom:0px; background-color:white; padding: 15px 35px 15px 35px; color:#cb416b; font-family:impact;"> Women Empowerment</h1>
+  <img src="Pictures/womenemp.jpg" alt="Description">
+</div>
+
+<p style="font-size:20px; text-align:center; line-height: 30px; margin-bottom:50px;background-color:white; padding: 15px 35px 15px 35px; color: #cb416b">In this era where we often rely on social media for everything,<br> Social media has become a place where negativity can spread, but the question is, <br>How will social media help in empowering women?</p>
+
+<div style="text-align:center;"><a style="font-size:20px; margin-bottom:60px; background-color:#cb416b; padding: 15px 35px 15px 35px; color: white;" href="https://en.wikipedia.org/wiki/Women's_empowerment">What is Women's Empowerment?</a></div>
+
+<img style="width:29.3%; margin-top:30px;" src="Pictures/womenemp2.jpg">
+<img style="width:40.8%;" src="Pictures/womenemp3.jpg">
+<img style="width:29.3%;" src="Pictures/womenemp4.jpg">
+
+
+<h1 style="font-size:50px; margin-top:50px;margin-bottom:30px; text-align:center;background-color:#cb416b; padding: 15px 35px 15px 35px; color: white;font-family:impact;">INTRODUCTION</h1>
+
+<h2 style="font-size:30px; margin-top:30px;margin-bottom:30px; text-align:center;background-color:#cb416b; padding: 15px 35px 15px 35px; color: white; font-family:impact;">CHOSEN SOLUTION : We will make a page on different social media platforms, spreading awareness, boosting women empowerment and encouraging women to be more confident.</h2>
+
+<img style="margin-top:20px; margin-right:30px;" src="Pictures/women8.jpg" alt="women5" width="700" height="400" id="hp"/>
+
+<p style="font-size:20px; text-align:left; line-height: 20px; margin-bottom:25px; margin-top:68px; margin-left:30px;background-color:#cb416b; padding: 15px 35px 15px 35px; color: white; font-family:cambria;">Social media presents incredible chances for women to forge genuine connections with other women through online organizations. We may strengthen our bonds by joining groups and pages that share our values, aspirations, and goals in addition to actively participating in communities that support women’s empowerment. </p>
+
+<p style="font-size:20px; text-align:left; line-height: 20px; margin-bottom:50px; margin-top:20px; margin-left:30px;background-color:#cb416b; padding: 15px 35px 15px 35px; color: white;font-family:cambria;">Social media is beginning to influence the younger generation and women. Through dynamic and user-generated content, social media is a new communication system and technology where interpersonal relationships are created and maintained. <br>Women are setting an example for other women to follow by chronicling(record) and sharing their entrepreneurial journeys on social media. </p>
+
+<h2 style="font-size:30px; margin-top:50px;margin-bottom:30px; text-align:center;background-color:#cb416b; padding: 15px 35px 15px 35px; color: #cb416b">.....................................................................................................................................</h2>
+
+<div><img style="margin-left:450px" src="Pictures/women16.jpg" width="500" class="center" alt="My Image" ></div>
+
+<p style="font-size:20px; text-align:center; line-height: 20px; margin-bottom:40px; margin-top:20px; margin-left:150px; margin-right:150px;background-color:white; padding: 15px 35px 15px 35px; color: #cb416b;font-family:cambria;">To improve their condition it requires that women can be able to engage in a productive activity that will
+allow them some degree of autonomy, no matter how small and hard to obtain at the beginning and the ability to organize and mobilize for change. The development of women is directly impacted by modern technology. It has also made it possible for the world to hear their voices. </p>
+
+<h2 style="font-size:30px; margin-top:40px;margin-bottom:30px; text-align:center;background-color:#cb416b; padding: 15px 35px 15px 35px; color: #cb416b">.....................................................................................................................................</h2>
+
+<img style="margin-top:30px; margin-left:30px;" src="Pictures/women17.jpg" alt="women5" width="450" height="500" id="hp1"/>
+
+<p style="font-size:30px; text-align:center; line-height: 30px; margin-bottom:20px; margin-top:70px; margin-right:20px; background-color:white; padding: 15px 35px 15px 35px; color: #cb416b;font-family:impact;"><b>HOW CAN WE EMPOWER OURSELVES<br> AND THE WOMEN AROUND US IN THIS ERA OF SOCIAL MEDIA?</b></p>
+
+<p style="font-size:20px; text-align:center; line-height: 20px; margin-bottom:10px; margin-top:20px; margin-right:50px; margin-left:550px;background-color:#cb416b; padding: 15px 35px 15px 35px; color: white;font-family:cambria;">Regulation of social media platforms can target different aspects of the infrastructure, for example, the technology – by regulating algorithmic processing of content (e.g. on what basis targeting can be done) or the company – such as with antitrust legislation. The intersecting dynamics of gender, race, geography and sexuality also point to the importance of intersectional and interdisciplinary work to create a more equitable and inclusive foundation for online interactions.</p>
+
+<p style="font-size:20px; text-align:center; line-height: 20px; margin-bottom:50px; margin-top:10px; margin-right:50px; margin-left:550px;background-color:#cb416b; padding: 15px 35px 15px 35px; color: white;font-family:cambria;">In addition to using social media to spread awareness, women can utilize social media to take action. There are numerous ways to accomplish this, including starting online petitions, staging protests, and raising funds for groups that strive to empower women. Social media can also be used to connect with other groups and individuals who are working on similar topics, which is an excellent approach to develop a support network. </p>
+
+<h2 style="font-size:30px; margin-top:70px;margin-bottom:30px; text-align:center;background-color:#cb416b; padding: 15px 35px 15px 35px; color: #cb416b">.....................................................................................................................................</h2>
+
+<img style="margin-top:20px; margin-right:200px;" src="Pictures/women11.jpg" alt="women5" width="500" height="400" id="hp"/>
+
+<p style="font-size:20px; text-align:center; line-height: 20px; margin-bottom:10px; margin-top:120px; margin-left:150px; margin-right:150px;background-color:white; padding: 15px 35px 15px 35px; color: #cb416b;font-family:cambria;">Promoting women’s empowerment online is complex and it encompasses various aspects of digital education, access to technology and gender equality.
+  </p>
+  <p style="font-size:20px; text-align:center; line-height: 20px; margin-bottom:30px; margin-top:10px; margin-left:150px; margin-right:150px;background-color:white; padding: 15px 35px 15px 35px; color: #cb416b;font-family:cambria;"> The aim is to bridge the digital gender gap and create an inclusive online environment that empowers women to utilize the internet with confidence.
+
+  </p>
+  
+  <h2 style="font-size:30px; margin-top:150px;margin-bottom:30px; text-align:center;background-color:#cb416b; padding: 15px 35px 15px 35px; color: #cb416b">.....................................................................................................................................</h2>
+  
+  <p style="font-size:20px; text-align:center; line-height:20px;margin-bottom:10px; margin-left:15px;margin-right:15px; margin-top:30px;background-color:white; padding:15px 35px 15px 35px; color: #cb416b;font-family:cambria;">However, as everyone is aware, social media has also been utilized to harass and intimidate women online. These attacks specifically target women journalists and women in positions of influence. Research has repeatedly demonstrated that women face threats and attacks on the internet that are very different from those faced by men. <br>.<br>.<br>
+Physical threats are directed at all genders, but those directed towards women are sexual in nature and are intended to establish dominance, frighten, and quiet. Because abusive remarks on social media get a lot of likes, some sexists have been inspired to come out of the shadows and preach prejudice.<br>.<br>.<br>
+
+What is certain is that social media will continue to play a part in women's empowerment and the growth of feminism. What counts is how we use it properly and responsibly.<br>.<br>.<br></p>
+
+<img style="width:65%;margin-left:250px; margin-top:20;" src="Pictures/women13.jpg">
+
+ <h2 style="font-size:30px; margin-top:40px;margin-bottom:30px; text-align:center;background-color:#cb416b; padding: 15px 35px 15px 35px; color: #cb416b;font-family:cambria;">.....................................................................................................................................</h2>
